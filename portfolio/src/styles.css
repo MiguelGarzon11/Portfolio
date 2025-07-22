@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
   --color-main: #222326;
   --color-secondary: #d7d7d9;
@@ -26,7 +28,7 @@
 
   a {
     @apply text-black dark:text-white font-sans font-bold;
-    @apply hover:scale-110 transition-all duration-500;
+    @apply hover:scale-110 transition-all duration-300;
     @apply flex flex-row gap-2 items-center;
   }
 }
