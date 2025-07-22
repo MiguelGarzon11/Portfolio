@@ -31,4 +31,8 @@
     @apply hover:scale-110 transition-all duration-300;
     @apply flex flex-row gap-2 items-center;
   }
+
+  hr {
+    @apply h-px w-11/12 bg-gradient-to-r from-transparent via-buttonS to-transparent border-0 dark:via-white;
+  }
 }
