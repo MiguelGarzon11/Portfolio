@@ -38,6 +38,6 @@
   }
 
   footer {
-    @apply h-48 flex flex-row justify-around;
+    @apply h-48 flex flex-row justify-between mx-20;
   }
 }
