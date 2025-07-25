@@ -38,6 +38,10 @@
   }
 
   footer {
-    @apply h-48 flex flex-row justify-between mx-20;
+    @apply h-40 flex flex-row justify-between mx-28 mt-3;
+  }
+
+  button {
+    @apply text-white dark:text-black h-10 w-48 bg-main dark:bg-secondary rounded-lg hover:bg-;
   }
 }
