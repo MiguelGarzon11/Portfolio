@@ -42,6 +42,18 @@
   }
 
   button {
-    @apply text-white dark:text-black h-10 w-48 bg-main dark:bg-secondary rounded-lg hover:bg-;
+    @apply text-white text-lg font-semibold dark:text-black h-10 w-48 bg-main dark:bg-secondary rounded-lg hover:bg-buttonS hover:dark:bg-white hover:border-spacing-3 border-main hover:scale-105 transition-all duration-300;
   }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1200px);
+  }
+}
+.animate-scroll {
+  animation: scroll 15s linear infinite;
 }
