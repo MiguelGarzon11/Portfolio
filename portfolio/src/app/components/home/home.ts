@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import { Skills } from "../skills/skills";
 
 @Component({
   selector: 'app-home',
-  imports: [],
+  standalone: true,
+  imports: [Skills],
   templateUrl: './home.html',
   styleUrl: './home.css'
 })

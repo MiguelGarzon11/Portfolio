@@ -1,3 +1,5 @@
+import plugin from 'tailwindcss/plugin'
+
 export default {
   darkMode: 'class',
   content: ["./src/**/*.{html,ts}"],
@@ -11,5 +13,14 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ addUtilities }) {
+      addUtilities({
+        '.mask-fade-x': {
+          maskImage: 'linear-gradient(to right, transparent, white 10%, white 90%, transparent)',
+          WebkitMaskImage: 'linear-gradient(to right, transparent, white 10%, white 90%, transparent)',
+        }
+      })
+    })
+  ],
 };

@@ -15,7 +15,7 @@
   body {
     @apply bg-secondary dark:bg-main;
     @apply text-black dark:text-white;
-    @apply h-screen;
+    @apply h-full;
   }
 
   h1,
@@ -51,9 +51,10 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-1200px);
+    transform: translateX(-50%);
   }
 }
+
 .animate-scroll {
-  animation: scroll 15s linear infinite;
+  animation: scroll 100s linear infinite;
 }
