@@ -1,11 +1,11 @@
 import { Routes } from '@angular/router';
 import { Home } from './components/home/home';
-import { Email } from './components/email/email';
 import { Skills } from './components/skills/skills';
+import { Contactme } from './components/contactme/contactme';
 
 export const routes: Routes = [
     { path: '', component: Home },
-    { path: 'email', component: Email },
+    { path: 'contactme', component: Contactme },
     { path: '**', redirectTo: '' }, // Redirect any unknown paths to Home
     { path: 'skills', component: Skills }
 ];
