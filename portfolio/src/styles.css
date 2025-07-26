@@ -51,10 +51,10 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(-30%);
   }
 }
 
 .animate-scroll {
-  animation: scroll 100s linear infinite;
+  animation: scroll 22s linear infinite;
 }
