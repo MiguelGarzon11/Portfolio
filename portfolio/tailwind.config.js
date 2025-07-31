@@ -5,6 +5,11 @@ export default {
   content: ["./src/**/*.{html,ts}"],
   theme: {
     extend: {
+      dropShadow: {
+        'white': '0 0 0.1rem rgba(255, 255, 255, 1)',
+        'black': '0 0 0.1rem rgba(0, 0, 0, 1)',
+        'blue': '0 0 0.1rem rgba(135, 232, 255, 0.5)',
+      },
       colors: {
         main: "#222326",
         secondary: "#d7d7d9",
