@@ -46,7 +46,23 @@
   }
 
   textarea {
-    @apply bg-white w-72 h-auto text-sm text-wrap rounded-lg p-3 hover:scale-105 transition-all duration-300 hover:border-separate border-spacing-3 border-main;
+    @apply bg-white text-black w-72 max-h-48 min-h-28 text-sm text-wrap rounded-lg p-3 hover:scale-105 transition-all duration-300 border-main;
+  }
+
+  #project {
+    @apply drop-shadow-black dark:drop-shadow-white hover:scale-105 transition-all duration-300;
+  }
+
+  #button {
+    @apply text-sm bg-button text-white dark:bg-main dark:text-white hover:bg-secondary dark:hover:bg-buttonS hover:text-white;
+  }
+
+  #sendmessage {
+    @apply hover:drop-shadow-white mb-10 hover:scale-90 transition-all duration-500;
+  }
+
+  #sendmessage2 {
+    @apply text-secondary dark:text-main hover:drop-shadow-white mb-10 hover:scale-90 transition-all duration-500;
   }
 }
 
@@ -60,5 +76,5 @@
 }
 
 .animate-scroll {
-  animation: scroll 22s linear infinite;
+  animation: scroll 35s linear infinite;
 }

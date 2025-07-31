@@ -1,7 +1,7 @@
 <body>
     <div id="home" class="flex flex-row justify-around">
 
-        <div class="flex flex-col">
+        <div class="flex flex-col drop-shadow-black dark:drop-shadow-white">
             <div
                 class="flex justify-start gap-48 items-center h-[35px] w-[650px] bg-main dark:bg-secondary mt-28 rounded-t-2xl">
                 <div class="flex flex-row gap-2 mx-3">
@@ -24,9 +24,10 @@
     <div class="flex flex-row justify-around my-28 mx-20">
         <div class="flex flex-col items-start justify-start w-96 gap-3">
             <h1 class="font-sans text-3xl">Full-stack Developer</h1>
-            <p class="flex flex-row text-wrap justify-start text-xl font-extralight">Soy Miguel Ángel, desarrollador
-                Full Stack en formación con experiencia en Angular, Tailwind, React, JavaScript, TypeScript, Python,
-                SQL, Git, Docker, HTML y CSS. Me especializo en desarrollo web y creación de aplicativos funcionales.
+            <p class="flex flex-row text-wrap justify-start text-xl font-extralight">Hi, I'm Miguel Ángel — a Full Stack
+                developer in training with hands-on experience in Angular, Tailwind, React, JavaScript, TypeScript,
+                Python, SQL, Git, Docker, HTML, and CSS. I specialize in web development and building functional,
+                user-focused applications.
             </p>
         </div>
 
@@ -68,7 +69,11 @@
         </div>
     </div>
 
-    <div id="skills" class="flex justify-center items-center">
+    <div id="projects" class="flex justify-center items-center m-10">
+        <app-projects></app-projects>
+    </div>
+
+    <div id="skills" class="flex justify-center items-center m-10 p-10">
         <app-skills></app-skills>
     </div>
 </body>
