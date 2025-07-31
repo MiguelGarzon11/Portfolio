@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "setup": "npm install -g @angular/cli && npm install"
+    "setup": "npm install @angular/cli --save-dev"
   },
   "prettier": {
     "overrides": [
