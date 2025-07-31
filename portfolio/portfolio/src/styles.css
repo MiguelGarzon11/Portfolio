@@ -44,10 +44,6 @@
   button {
     @apply text-white text-lg font-semibold dark:text-black h-10 w-48 bg-main dark:bg-secondary rounded-lg hover:bg-buttonS hover:dark:bg-white hover:border-spacing-3 border-main hover:scale-105 transition-all duration-300;
   }
-
-  textarea {
-    @apply bg-white w-72 h-auto text-sm text-wrap rounded-lg p-3 hover:scale-105 transition-all duration-300 hover:border-separate border-spacing-3 border-main;
-  }
 }
 
 @keyframes scroll {
@@ -55,10 +51,10 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-30%);
+    transform: translateX(-50%);
   }
 }
 
 .animate-scroll {
-  animation: scroll 22s linear infinite;
+  animation: scroll 110s linear infinite;
 }
