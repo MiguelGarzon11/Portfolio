@@ -46,11 +46,11 @@
   }
 
   textarea {
-    @apply bg-white text-black w-72 max-h-48 min-h-28 text-sm text-wrap rounded-lg p-3 hover:scale-105 transition-all duration-300 border-main;
+    @apply bg-white text-black w-72 max-h-48 min-h-28 text-sm text-wrap rounded-lg p-3 hover:scale-105 transition-all duration-300 border-main mt-3;
   }
 
   input {
-    @apply bg-white text-black w-72 h-10 text-sm text-wrap rounded-lg p-3 hover:scale-105 transition-all duration-300 border-main;
+    @apply bg-white text-black w-72 h-10 text-sm text-wrap rounded-lg p-3 hover:scale-105 transition-all duration-300 border-main -mt-1;
   }
 
   #project {

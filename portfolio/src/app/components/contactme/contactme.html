@@ -38,11 +38,10 @@
                     <div *ngIf="selectedPlatform === 'email'">
                         <input type="text" [(ngModel)]="subject" name="subject" placeholder="Subject" maxlength="50"
                             required>
-
                     </div>
 
 
-                    <textarea type="text" name="message"
+                    <textarea name="message" [(ngModel)]="message"
                         [placeholder]="selectedPlatform === 'email' ? 'Send me an email to contact me' : 'Type your WhatsApp message here'"></textarea>
 
                     <h3 class="font-extralight text-white dark:text-black">Select Opcion</h3>
@@ -53,10 +52,12 @@
                             (click)="setPlatform('email')">
                             <use href="assets/icons/gmail.svg"></use>
                         </svg>
+
                         <svg id="sendmessage" class="h-10 w-10 drop-shadow-lg cursor-pointer"
                             (click)="setPlatform('whatsapp')">
                             <use href="assets/icons/wh.svg"></use>
                         </svg>
+
                         <a href="https://github.com/MiguelGarzon11" target="_blank">
                             <svg id="sendmessage2" class="h-11 w-11 drop-shadow-lg cursor-pointer">
                                 <use href=" assets/icons/github.svg"></use>
@@ -70,8 +71,8 @@
 
                     </div>
 
-                    <button id="button">{{ selectedPlatform === 'email' ? 'Send Email' : 'Send WhatsApp' }}
-
+                    <button id="button" (click)="selectedPlatform === 'whatsapp' ? sendWhatsApp() : sendEmail()">{{
+                        selectedPlatform === 'email' ? 'Send Email' : 'Send WhatsApp' }}
                     </button>
                 </div>
             </div>
