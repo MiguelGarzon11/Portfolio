@@ -6,7 +6,7 @@
         <div class="flex flex-col mb-10 shadow-md shadow-main dark:shadow-button rounded-t-2xl rounded-b-xl">
 
             <div
-                class="flex gap-24 justify-start items-center h-[35px] w-[500px] bg-main dark:bg-secondary rounded-t-2xl">
+                class="flex gap-24 justify-start items-center h-[35px] w-[550Spx] bg-main dark:bg-secondary rounded-t-2xl">
 
                 <div class="flex gap-2 mx-3">
 
@@ -22,14 +22,25 @@
                 <div class="w-[70px]"></div>
             </div>
 
-            <div class="flex flex-col justify-around h-[500px] w-[500px] bg-buttonS dark:bg-button rounded-b-xl">
+            <div class="flex flex-col justify-around h-[600px] w-[550px] bg-buttonS dark:bg-button rounded-b-xl">
 
                 <div class="flex flex-col justify-center items-center m-3 gap-5">
                     <label class="justify-center text-white dark:text-black font-semibold text-xl" for="message">
-                        <h3 class="font-medium">
+                        <h3 class="font-medium mb-3">
                             {{ selectedPlatform === 'email' ? 'Send email' : 'Send WhatsApp' }}
                         </h3>
                     </label>
+
+                    <div *ngIf="selectedPlatform === 'email'">
+                        <input type="email" [(ngModel)]="email" name="email" placeholder="Your email" required>
+                    </div>
+
+                    <div *ngIf="selectedPlatform === 'email'">
+                        <input type="text" [(ngModel)]="subject" name="subject" placeholder="Subject" maxlength="50"
+                            required>
+
+                    </div>
+
 
                     <textarea type="text" name="message"
                         [placeholder]="selectedPlatform === 'email' ? 'Send me an email to contact me' : 'Type your WhatsApp message here'"></textarea>
@@ -59,8 +70,7 @@
 
                     </div>
 
-                    <button (click)="sendMessage()" id="button">{{ selectedPlatform === 'email' ? 'Send Email' : 'Send
-                        WhatsApp' }}
+                    <button id="button">{{ selectedPlatform === 'email' ? 'Send Email' : 'Send WhatsApp' }}
 
                     </button>
                 </div>

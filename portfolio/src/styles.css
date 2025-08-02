@@ -49,6 +49,10 @@
     @apply bg-white text-black w-72 max-h-48 min-h-28 text-sm text-wrap rounded-lg p-3 hover:scale-105 transition-all duration-300 border-main;
   }
 
+  input {
+    @apply bg-white text-black w-72 h-10 text-sm text-wrap rounded-lg p-3 hover:scale-105 transition-all duration-300 border-main;
+  }
+
   #project {
     @apply drop-shadow-black dark:drop-shadow-white hover:scale-105 transition-all duration-300;
   }

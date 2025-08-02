@@ -1,30 +1,24 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+
 
 @Component({
   selector: 'app-contactme',
-  imports: [],
+  imports: [CommonModule, FormsModule],
   templateUrl: './contactme.html',
   styleUrl: './contactme.css'
 })
 export class Contactme {
   selectedPlatform: 'email' | "whatsapp" = 'email';
+  email: string = '';
+  subject: string = '';
   message: string = '';
+
+
 
   setPlatform(platform: 'email' | 'whatsapp') {
     this.selectedPlatform = platform;
   }
 
-  sendMessage() {
-    if (!this.message.trim()) return;
-
-    if (this.selectedPlatform === 'email') {
-      const mailto = `mailto:miguelangelgarb@gmail.com?subject=contacto&body=${encodeURIComponent(this.message)}`
-      window.open(mailto, '_blank');
-    }
-    else {
-      const phone = '573194428331';
-      const waUrl = `https://wa.me/${phone}?text=${encodeURIComponent(this.message)}`;
-      window.open(waUrl, '_blank');
-    }
-  }
 }
