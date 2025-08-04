@@ -4,6 +4,7 @@ import { Header } from "./components/header/header";
 import { Footer } from "./components/footer/footer";
 import { FormsModule } from '@angular/forms';
 
+
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet, Header, Footer, FormsModule],
