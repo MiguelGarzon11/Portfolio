@@ -38,27 +38,27 @@ export class Contactme {
     window.open(whatsappUrl, '__blank');
   }
 
-  // sendEmail() {
-  //   if (!this.email || !this.subject || !this.message) {
-  //     alert('Por favor completa todos los campos');
-  //     return;
-  //   }
+  sendEmail() {
+    if (!this.email || !this.subject || !this.message) {
+      alert('Por favor completa todos los campos');
+      return;
+    }
 
-  //   const payload = {
-  //     email: this.email,
-  //     subject: this.subject,
-  //     message: this.message
-  //   };
+    const payload = {
+      email: this.email,
+      subject: this.subject,
+      message: this.message
+    };
 
-  //   this.http.post('https://portfolio-three-puce-96.vercel.app/api/sendEmail', payload).subscribe({
-  //     next: (res: any) => {
-  //       alert('Correo enviado con éxito');
-  //     },
+    this.http.post('https://portfolio-three-puce-96.vercel.app/api/sendEmail', payload).subscribe({
+      next: (res: any) => {
+        alert('Correo enviado con éxito');
+      },
 
-  //     error: (error) => {
-  //       console.log('Error enviando al correo: ', error);
-  //       alert('Error al enviar el correo: ' + error.error.message);
-  //     }
-  //   });
-  // }
+      error: (error) => {
+        console.log('Error enviando al correo: ', error);
+        alert('Error al enviar el correo: ' + error.error.message);
+      }
+    });
+  }
 }

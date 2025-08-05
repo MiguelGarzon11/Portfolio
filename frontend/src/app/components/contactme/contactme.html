@@ -71,7 +71,7 @@
 
                     </div>
 
-                    <button id="button" (click)="selectedPlatform === 'whatsapp' ? sendWhatsApp() : null ">{{
+                    <button id="button" (click)="selectedPlatform === 'whatsapp' ? sendWhatsApp() : sendEmail() ">{{
                         selectedPlatform === 'email' ? 'Send Email' : 'Send WhatsApp' }}
                     </button>
                 </div>
